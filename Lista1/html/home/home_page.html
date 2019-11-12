@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Mateusz Skąpski homepage</title>
     <meta name="viewport" content="width=device-widht, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="../../css/styles.css"/>
-  </head>
-  <body>
+</head>
+<body>
+<div class="bodyWrapper">
     <header>
-      <div class="header">
-        <h1>Mateusz Skąpski</h1>
-        <img class="photo" src="../../images/Mateusz_Skapski.jpg" alt="Mateusz Skąpski" >
-        <section class="header_info">
-          <h4>Student informatyki</h4>
-          <p>Wydział podstawowych problemów techniki</p>
-          <p>Politechnika Wrocławska</p>
-          <p>Tel: +48 123456789</p>
-          <p>Email: skapski.mat@gmail.com</p>
-        </section>
-      </div>
+        <div class="header">
+            <h1>Mateusz Skąpski</h1>
+            <img class="photo" src="../../images/Mateusz_Skapski.jpg" alt="Mateusz Skąpski">
+            <section class="header_info">
+                <h4>Student informatyki</h4>
+                <p>Wydział podstawowych problemów techniki</p>
+                <p>Politechnika Wrocławska</p>
+                <p>Tel: +48 123456789</p>
+                <p>Email: skapski.mat@gmail.com</p>
+            </section>
+        </div>
     </header>
-    <nav>
-      <a class="linkButton" href="../home/home_page.html">INFO</a>
-      <a class="linkButton" href="../projects/default.html">PROJEKTY</a>
-    </nav>
+  <nav class="topnav responsive" id="myTopnav">
+    <div>
+      <a class="active" href="../home/home_page.html">INFO</a>
+      <a class="icon" id="dropdownButton">&#9776;</a>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href = '../projects/default.html'">
+        PROJEKTY
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../projects/chineseCheckers.html">Chińskie warcaby</a>
+        <a href="../projects/fakturomat.html">Fakturomat</a>
+        <a href="../projects/shell.html">Powłoka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href = '../interests/index.html'">
+        ZAINTERESOWANIA
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../interests/functional_programing.html">Programowanie funkcyjne</a>
+        <a href="../interests/progresive_apps.html">Aplikacje progresywne</a>
+      </div>
+    </div>
+
+  </nav>
     <main>
-      <section class="mainSection">
-        <h3>Zainteresowania</h3>
-        <ul>
-          <li>
-            <a class="listA" href="../interests/functional_programing.html">
-              Programowanie funkcyjne
-            </a>
-          </li>
-          <li>
-            <a class="listA" href="../interests/progresive_apps.html">
-              Progresywne aplikacje webowe
-            </a>
-          </li>
-          <li>Narciarstwo</li>
-          <li>Literatura fantasy</li>
-        </ul>
-      </section>
+
     </main>
     <footer>
-      <p>Email: skapski.mat@gmail.com</p>
+        <p>Email: skapski.mat@gmail.com</p>
     </footer>
-  </body>
+</div>
+<script src="../../js/dropdown_menu.js"></script>
+</body>
 </html>

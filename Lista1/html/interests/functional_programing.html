@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Mateusz Skąpski</title>
     <link rel="stylesheet" type="text/css" href="../../css/styles.css"/>
     <meta name="viewport" content="width=device-widht, initial-scale=1.0"/>
-  </head>
-  <body>
+</head>
+<body>
+<div class="bodyWrapper">
     <header>
-      <h1>Mateusz Skąpski</h1>
+        <h1>Mateusz Skąpski</h1>
     </header>
-    <nav>
-      <a class="linkButton" href="../home/home_page.html">INFO</a>
-      <a class="linkButton" href="../projects/default.html">PROJEKTY</a>
-    </nav>
+  <nav class="topnav" id="myTopnav">
+    <div>
+      <a class="active" href="../home/home_page.html">INFO</a>
+      <a class="icon" id="dropdownButton">&#9776;</a>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href = '../projects/default.html'">
+        PROJEKTY
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../projects/chineseCheckers.html">Chińskie warcaby</a>
+        <a href="../projects/fakturomat.html">Fakturomat</a>
+        <a href="../projects/shell.html">Powłoka</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="location.href = '../interests/index.html'">
+        ZAINTERESOWANIA
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../interests/functional_programing.html">Programowanie funkcyjne</a>
+        <a href="../interests/progresive_apps.html">Aplikacje progresywne</a>
+      </div>
+    </div>
+
+  </nav>
     <main>
-      <article class="mainSection" >
-        <h3>Programowanie funkcyjne</h3>
-        <p>Sposób programowania będący odmianą programowania deklaratywnego,
-        gdzie funkcje są częścią wartości podstawowych.</p>
-        <p>W porgramowaniu funkcyjnym nacisk kładzie się na tworzenie funkcji rekurencyjnych
-        które raz zdefiniowane, zawsze zwracają tą samą wartość dla danych argumentów,
-      analogicznie do funkcji matematycznych</p>
-      <p>Przykładem języka czysto funkcyjnego jest Haskell</p>
-      </article>
+        <article class="mainSection">
+            <h3>Programowanie funkcyjne</h3>
+            <p>Sposób programowania będący odmianą programowania deklaratywnego,
+                gdzie funkcje są częścią wartości podstawowych.</p>
+            <p>W porgramowaniu funkcyjnym nacisk kładzie się na tworzenie funkcji rekurencyjnych
+                które raz zdefiniowane, zawsze zwracają tą samą wartość dla danych argumentów,
+                analogicznie do funkcji matematycznych</p>
+            <p>Przykładem języka czysto funkcyjnego jest Haskell</p>
+        </article>
     </main>
     <footer>
-      <p>Email: skapski.mat@gmail.com</p>
+        <p>Email: skapski.mat@gmail.com</p>
     </footer>
-  </body>
+</div>
+<script src="../../js/dropdown_menu.js"></script>
+</body>
 </html>
