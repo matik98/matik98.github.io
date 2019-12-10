@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Puzzle</title>
+    <script src="gallery.js"></script>
+    <script src="puzzle.js"></script>
+    <style>
+        img {
+            width: 15em;
+            height: 10em;
+        }
+        .canvas {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 60em;
+        }
+
+        .gallery {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70em;
+        }
+
+    </style>
+</head>
+<body onload="init();">
+<main>
+
+    <div class="canvas">
+        <canvas id="canvas">Browser does not support canvas</canvas>
+        <ul>
+            <li>
+                <label >
+                    Poziom trudnosci:
+                    <input type="number" min="2" value="3" id="difficult">
+                </label>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="gallery">
+        <img id="img1" src="img1_optimized.jpg" alt="img1">
+        <img id="img2" src="img2_optimized.jpg" alt="img1">
+        <img id="img3" src="img3_optimized.jpg" alt="img1">
+        <img id="img4" src="img4_optimized.jpg" alt="img1">
+        <img id="img5" src="img5_optimized.jpg" alt="img1">
+        <img id="img6" src="img6_optimized.jpg" alt="img1">
+        <img id="img7" src="img7_optimized.jpg" alt="img1">
+        <img id="img8" src="img8_optimized.jpg" alt="img1">
+        <img id="img9" src="img9_optimized.jpg" alt="img1">
+        <img id="img10" src="img10_optimized.jpg" alt="img1">
+        <img id="img11" src="img11_optimized.jpg" alt="img1">
+        <img id="img12" src="img12_optimized.jpg" alt="img1">
+    </div>
+
+</main>
+</body>
+</html>
